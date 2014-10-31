@@ -18,7 +18,6 @@ android {
         }
     }
 }
-zxczCzxc
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 }
@@ -67,10 +66,8 @@ task debug << {
 incrementVersionName.mustRunAfter build
 incrementVersionCode.mustRunAfter build
  
-debug.dependsOn assembleDebug
+
 debug.dependsOn incrementVersionCode
 debug.dependsOn incrementVersionName
  
-release.dependsOn assembleRelease
-release.dependsOn incrementVersionCode
-release.dependsOn incrementVersionName
+
