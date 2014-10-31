@@ -69,3 +69,5 @@ debug.dependsOn incrementVersionCode
 debug.dependsOn incrementVersionName
  
 
+release.dependsOn incrementVersionCode
+release.dependsOn incrementVersionName
